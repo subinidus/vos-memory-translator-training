@@ -1,0 +1,149 @@
+{
+  "schema": "vos_translator.sanitized_training_summary.v1",
+  "status_date": "2026-10-13",
+  "evidence_scope": "Historical delivery metadata and scalar history audited locally; no checkpoint binary loaded and no training rerun during package preparation.",
+  "public_source_revision": "150a9e66581e80d9837efdceb84c125da3d1a726",
+  "completed_training_revision": "165d81aad15f1ab7a05d319d1da975a1e7322093",
+  "model_body_origin_revision": "746ea3e7d84c366c2d7ac06159e90a1f684bca56",
+  "direction": {
+    "source": "sam2.1-small",
+    "target": "sam2.1-base-plus"
+  },
+  "training": {
+    "fresh_translator_initialization": true,
+    "sam_weights_updated": false,
+    "complete_epochs": 28,
+    "optimizer_updates": 128996,
+    "stop_reason": "validation_r2_early_stopping",
+    "best_epoch": 26,
+    "best_validation_r2_score": 0.6190369666836515,
+    "global_batch": 64,
+    "world_size": 2,
+    "accumulation": 1,
+    "precision": "fp32",
+    "optimizer": "AdamW",
+    "initial_learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "augmentation": "none",
+    "seed": 7,
+    "max_epochs": 60,
+    "early_stopping": {
+      "minimum_epochs": 15,
+      "patience": 8,
+      "absolute_minimum_improvement": 0.001,
+      "best_and_stopping_reference_are_separate": true
+    }
+  },
+  "historical_environment": {
+    "python": "3.12.11",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "run_specific_nccl_p2p_disable": "1"
+  },
+  "data": {
+    "mosev2_membership": {
+      "train": 3300,
+      "validation": 183,
+      "internal_test": 183
+    },
+    "lvosv2_official_membership": {
+      "train": 420,
+      "validation": 140
+    },
+    "used_videos": {
+      "mosev2_train": 2963,
+      "mosev2_validation": 166,
+      "lvosv2_train": 420,
+      "lvosv2_validation": 140
+    },
+    "valid_records": {
+      "mosev2_train": 265945,
+      "lvosv2_train": 28848,
+      "train_total": 294793,
+      "mosev2_validation": 13887,
+      "lvosv2_validation": 11424,
+      "validation_total": 25311
+    },
+    "internal_test_used_for_training_statistics_or_selection": false,
+    "tested_video_group_id_overlap": 0,
+    "original_clip_lineage_fully_verified": false
+  },
+  "best_epoch_validation_r2": {
+    "mosev2_spatial": 0.8069154687774132,
+    "mosev2_pointer": 0.505647059146656,
+    "lvosv2_spatial": 0.8056329467771441,
+    "lvosv2_pointer": 0.35795239203339246,
+    "equal_four_component_mean": 0.6190369666836515
+  },
+  "training_target_rms": {
+    "spatial": 0.8042736065258159,
+    "pointer": 0.6333327365530066,
+    "usage": "Training-loss scale only; inference inputs unchanged."
+  },
+  "reused_producer_validation": {
+    "strict_reload": true,
+    "both_branches_updated": true,
+    "rank_parameter_max_difference": 0,
+    "new_reproduction_during_preparation": false
+  },
+  "claim_boundaries": {
+    "selected_weights_downstream_j_and_f_verified": false,
+    "selected_weights_end_to_end_no_replay_handoff_verified": false,
+    "same_condition_learned_linear_or_architecture_ablation_verified": false,
+    "all_research_gates_passed": false,
+    "preliminary_collaborator_evaluation_numbers_included": false
+  },
+  "training_pipeline_release": {
+    "date": "2026-10-18",
+    "scope": "Translator training pipeline only",
+    "namespace": "vos_memory_training",
+    "console_entry_point": "vos-memory-training",
+    "external_team_core_revision": "150a9e66581e80d9837efdceb84c125da3d1a726",
+    "external_core_included": false,
+    "historical_results_reused": true,
+    "extracted_package_training_executed": false,
+    "new_model_or_tensor_validation_executed": false,
+    "earlier_full_bundle_test_counts_reused_as_extraction_tests": false,
+    "historical_resume_supported_by_extraction": false,
+    "contribution": [
+      "frozen video split",
+      "role-aware training index",
+      "training-only loss statistics",
+      "distributed training and validation aggregation",
+      "checkpoint selection and resume",
+      "bounded execution and artifact export"
+    ],
+    "extraction_validation": {
+      "date": "2026-10-18",
+      "status": "TRAINING_ONLY_EXTRACTION_CHECKS_PASS",
+      "python_ast_files": 22,
+      "namespace_normalized_ast_identical_modules": 17,
+      "model_computation_ast_identical": true,
+      "external_core_text_sha_lock_pass": true,
+      "changed_external_core_text_rejected": true,
+      "cli_module_help_invocations": 10,
+      "cli_module_help_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "synthetic_metadata_numeric_tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "unit_exit_code": 0,
+      "torch_imported": false,
+      "core_imported": false,
+      "actual_data_split_or_statistics_generated": false,
+      "tensor_or_model_computation_executed": false,
+      "new_training_executed": false
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "status": "TRAINING_ONLY_EXTRACTION_CHECKS_PASS",
+  "date": "2026-10-18",
+  "training_modules": 18,
+  "test_modules": 4,
+  "python_AST_files": 22,
+  "namespace_normalized_AST_identical_modules": [
+    "__init__.py",
+    "__main__.py",
+    "cache.py",
+    "checkpoint.py",
+    "common.py",
+    "delivery.py",
+    "evaluation.py",
+    "index.py",
+    "limits.py",
+    "loader.py",
+    "policy.py",
+    "r2.py",
+    "remote_run.py",
+    "schedule.py",
+    "splits.py",
+    "statistics.py",
+    "training.py"
+  ],
+  "model_computation_AST_identical": true,
+  "external_core_SHA_lock_pass": true,
+  "changed_external_core_rejected": true,
+  "CLI_help": [
+    {
+      "module": "vos_memory_training",
+      "command": null,
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "inventory",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "freeze",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "plan",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "inspection-plan",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "index",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "statistics",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "train",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training",
+      "command": "monitor",
+      "exit_code": 0
+    },
+    {
+      "module": "vos_memory_training.remote_run",
+      "command": null,
+      "exit_code": 0
+    }
+  ],
+  "synthetic_metadata_numeric_unit": {
+    "tests_run": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "torch_imported": false,
+    "core_imported": false
+  },
+  "unit_exit_code": 0,
+  "architecture_or_runtime_files_included": false,
+  "core_requirement": "vos-memory-translator-nonlinear @ git+https://github.com/memorybridge-team/vos-memory-translator-nonlinear.git@150a9e66581e80d9837efdceb84c125da3d1a726",
+  "actual_data_split_or_statistics_generated": false,
+  "tensor_or_model_computation_executed": false,
+  "new_training_executed": false,
+  "historical_training_result": {
+    "complete_epochs": 28,
+    "best_epoch": 26,
+    "validation_state_r2_Q": 0.6190369666836515,
+    "source_revision": "165d81aad15f1ab7a05d319d1da975a1e7322093"
+  },
+  "reproduction_commands": [
+    "python -m vos_memory_training --help",
+    "python -m unittest discover -s tests -p test_state_training_contract.py -v"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "datasets": [
+    {
+      "dataset": "MOSEv2",
+      "official_split": "train",
+      "inventory": "data/contracts/mose_train.json",
+      "case_manifest": "data/contracts/mose_cases.json",
+      "storage_membership": {
+        "fit": "data/contracts/mose_fit_storage.json",
+        "development": "data/contracts/mose_development_storage.json"
+      },
+      "cache_roots": {
+        "fit": "data/paired/mose/fit",
+        "development": "data/paired/mose/development"
+      },
+      "filename_pattern": "mose_{video_id}_obj{object_id}_switch{switch_frame}.pt"
+    },
+    {
+      "dataset": "LVOSv2",
+      "official_split": "train",
+      "inventory": "data/contracts/lvos_train.json",
+      "case_manifest": "data/contracts/lvos_train_cases.json",
+      "storage_membership": {
+        "fit": "data/contracts/lvos_fit_storage.json",
+        "development": "data/contracts/lvos_development_storage.json"
+      },
+      "cache_roots": {
+        "fit": "data/paired/lvos/fit",
+        "development": "data/paired/lvos/development"
+      },
+      "filename_pattern": "lvos_{video_id}_obj{object_id}_switch{switch_frame}.pt"
+    },
+    {
+      "dataset": "LVOSv2",
+      "official_split": "valid",
+      "inventory": "data/contracts/lvos_valid.json",
+      "case_manifest": "data/contracts/lvos_valid_cases.json",
+      "cache_roots": {
+        "validation": "data/paired/lvos/validation"
+      },
+      "filename_pattern": "lvos_{video_id}_obj{object_id}_switch{switch_frame}.pt"
+    }
+  ],
+  "exclusions": []
+}

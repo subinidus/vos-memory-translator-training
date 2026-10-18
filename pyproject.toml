@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vos-memory-translator-training"
+version = "0.1.0"
+description = "Cached-state Translator training pipeline with frozen split and validation R2 selection"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+research-core = ["vos-memory-translator-nonlinear @ git+https://github.com/memorybridge-team/vos-memory-translator-nonlinear.git@150a9e66581e80d9837efdceb84c125da3d1a726"]
+
+[project.scripts]
+vos-memory-training = "vos_memory_training.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

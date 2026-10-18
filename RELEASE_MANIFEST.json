@@ -1,0 +1,181 @@
+{
+  "schema": "vos_memory_training.public_source_manifest.v1",
+  "date": "2026-10-18",
+  "status": "REVIEWED_TRAINING_PIPELINE_SOURCE",
+  "scope": "training_pipeline_only",
+  "publication_target": "https://github.com/subinidus/vos-memory-translator-training",
+  "reviewed_pipeline_revision": "150a9e66581e80d9837efdceb84c125da3d1a726",
+  "historical_training_revision": "165d81aad15f1ab7a05d319d1da975a1e7322093",
+  "original_zip_sha256": "d29f9fbbbfac9012bbda0968b08f6e4d03e763c1443e1b94fd551dd10b15068a",
+  "external_model_code_vendored": false,
+  "new_project_license_added": false,
+  "files": {
+    ".gitattributes": {
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    ".gitignore": {
+      "bytes": 288,
+      "sha256": "8b4233702a821d7cb3558c8dad3cc0585ee64ffe7383e29fb1d13f3edb205428"
+    },
+    "configs/state_training_datasets.example.json": {
+      "bytes": 1515,
+      "sha256": "eb6714a2c35940b2bf418162ef7a743a65aaf9aa84f06e565160808dba27b274"
+    },
+    "configs/state_training_r2.json": {
+      "bytes": 387,
+      "sha256": "2c6f00c47df19f9044d3924b37da8a03f5780b53a56c885282bf73103dead127"
+    },
+    "docs/contributions.md": {
+      "bytes": 1801,
+      "sha256": "62ce4246b023554aecf5eba73fa90563be210fe064f26850dc146122d9ababca"
+    },
+    "docs/data.md": {
+      "bytes": 2389,
+      "sha256": "0e502261bfb08c5938315cf0c535bf18e96925003dd51605a50cf291bc80edc7"
+    },
+    "docs/results.md": {
+      "bytes": 4430,
+      "sha256": "4738ef563b5eed65025d5b3ec80175b56e15da0bae14224239217d17056605db"
+    },
+    "docs/training.md": {
+      "bytes": 10198,
+      "sha256": "4867bea1579351a174a3404f27d19f97b4bbfb76563af56ecd24214820b58570"
+    },
+    "docs/validation.md": {
+      "bytes": 3116,
+      "sha256": "98bc2b8f79c45c7839daf2acb963a9ed921b8ad6daa640df61327e0e88b7a3a5"
+    },
+    "PROVENANCE.md": {
+      "bytes": 2954,
+      "sha256": "23597f3bb71bbc31dfaf89e05db0440758bffbffb2004d6ad35ec932c432e500"
+    },
+    "pyproject.toml": {
+      "bytes": 724,
+      "sha256": "772e5c3b24b2840226bcc3a14577a687d438ab2ab4d461e08860a9c5648f794f"
+    },
+    "README.md": {
+      "bytes": 4020,
+      "sha256": "a68f26944a94b123f6d05a0f71677e23a7c696a478d54ef4d5e95cedfe329052"
+    },
+    "results/release_checks.json": {
+      "bytes": 2600,
+      "sha256": "0d7714e2b0c63302babb8a3eadab5921c62df839abdeac7e394049e71b4a6df0"
+    },
+    "results/verified_training.json": {
+      "bytes": 4885,
+      "sha256": "ed5275908ab26fe3efe4d6a60dae56b7fa7c954031d10f0a20f07ec2c9f023e8"
+    },
+    "src/vos_memory_training/__init__.py": {
+      "bytes": 218,
+      "sha256": "1b6d1bd38f1f55ab58d979123e1a2beb9ffa6c7d642eaa90051a5984f77734b9",
+      "source_path": "src/vos_memory_inspector/state_training/__init__.py"
+    },
+    "src/vos_memory_training/__main__.py": {
+      "bytes": 6633,
+      "sha256": "0f7a25f8be306377dfd01707039e188da6c9d9e372b36cc0bf5b597fc9ec6c40",
+      "source_path": "src/vos_memory_inspector/state_training/__main__.py"
+    },
+    "src/vos_memory_training/cache.py": {
+      "bytes": 6460,
+      "sha256": "b09073be9f7a012e12df9e96e9cd10febdf5e350d51c426062e3de5f9e77e686",
+      "source_path": "src/vos_memory_inspector/state_training/cache.py"
+    },
+    "src/vos_memory_training/checkpoint.py": {
+      "bytes": 3059,
+      "sha256": "2aacdab619130f2ec50e2e36fed293bc27ca52b5b96799e965b2589e6579c184",
+      "source_path": "src/vos_memory_inspector/state_training/checkpoint.py"
+    },
+    "src/vos_memory_training/common.py": {
+      "bytes": 3719,
+      "sha256": "073a1fce54ffa84bf88faa446cb0e5b77fe2d0621d88e11f982ba077485b341e",
+      "source_path": "src/vos_memory_inspector/state_training/common.py"
+    },
+    "src/vos_memory_training/delivery.py": {
+      "bytes": 7185,
+      "sha256": "22ff9f6293d7b3a53926fd56ce414921871b36855373b78b23e5989df1ef671a",
+      "source_path": "src/vos_memory_inspector/state_training/delivery.py"
+    },
+    "src/vos_memory_training/evaluation.py": {
+      "bytes": 3191,
+      "sha256": "05a3aae313257b62c77359e7e273c96174e04701729f40e3f269130f7e850f04",
+      "source_path": "src/vos_memory_inspector/state_training/evaluation.py"
+    },
+    "src/vos_memory_training/index.py": {
+      "bytes": 19980,
+      "sha256": "91a3f1ca2d6f54643dea07f5904037ed22f8b6b8d67217cacbe41b8cf94ccc76",
+      "source_path": "src/vos_memory_inspector/state_training/index.py"
+    },
+    "src/vos_memory_training/limits.py": {
+      "bytes": 3048,
+      "sha256": "5c4969bcd63d65ee9aa5df0d7cde30be60efb8b9308d0a132e0c2f7b047331ac",
+      "source_path": "src/vos_memory_inspector/state_training/limits.py"
+    },
+    "src/vos_memory_training/loader.py": {
+      "bytes": 4417,
+      "sha256": "85bf9d681689ad435f6cc30115015931d8ae4c953b251c026d35a7d10a28866f",
+      "source_path": "src/vos_memory_inspector/state_training/loader.py"
+    },
+    "src/vos_memory_training/model.py": {
+      "bytes": 3219,
+      "sha256": "0853fee359c5a1a9a166f9a06889f0e416a33beb0d8690a7ef792265f3ab4103",
+      "source_path": "src/vos_memory_inspector/state_training/model.py"
+    },
+    "src/vos_memory_training/policy.py": {
+      "bytes": 5078,
+      "sha256": "6432d527fb5c8304d724c38dbb2e89f4cf84b474fb519c701a1b923f85e76ef1",
+      "source_path": "src/vos_memory_inspector/state_training/policy.py"
+    },
+    "src/vos_memory_training/r2.py": {
+      "bytes": 4035,
+      "sha256": "c32b63b63cd2a6491337541bd75375eaa0ae02ad07a71e23b04ea222cddc9278",
+      "source_path": "src/vos_memory_inspector/state_training/r2.py"
+    },
+    "src/vos_memory_training/remote_run.py": {
+      "bytes": 20203,
+      "sha256": "573024013b332c01cad635acb019aa3efc9c885f21fbb1f916f8addc138ab6bf",
+      "source_path": "src/vos_memory_inspector/state_training/remote_run.py"
+    },
+    "src/vos_memory_training/schedule.py": {
+      "bytes": 1723,
+      "sha256": "ac2dbb543246f0008231d4c7953cbe193137e2d276f1cff4ea7255925e1742dc",
+      "source_path": "src/vos_memory_inspector/state_training/schedule.py"
+    },
+    "src/vos_memory_training/splits.py": {
+      "bytes": 6722,
+      "sha256": "c629d7555686baad4769ab4ba7997b4906b8a683309ac4fd9231f07acb9ac7bd",
+      "source_path": "src/vos_memory_inspector/state_training/splits.py"
+    },
+    "src/vos_memory_training/statistics.py": {
+      "bytes": 4488,
+      "sha256": "0ef6256a29d238f930813c9631b6f4090afa8a71c5d44493f02a9a7a1728be7e",
+      "source_path": "src/vos_memory_inspector/state_training/statistics.py"
+    },
+    "src/vos_memory_training/training.py": {
+      "bytes": 24237,
+      "sha256": "79720f5fbca9476cebf2b10e719e96f417e55001c1b2ffe704f40537ba7b9890",
+      "source_path": "src/vos_memory_inspector/state_training/training.py"
+    },
+    "tests/test_nccl_recovery_binding.py": {
+      "bytes": 1695,
+      "sha256": "228ef48a0b0ed9fdbafa9610ce3350b84f029486bfed44e22cd4a703337277a5"
+    },
+    "tests/test_state_training_contract.py": {
+      "bytes": 14849,
+      "sha256": "0f489d0abb4dc799efec8d496518b374862e2abae9689a2c0af40205f846f54e"
+    },
+    "tests/test_state_training_remote_run.py": {
+      "bytes": 10315,
+      "sha256": "1ce55e0b32fab4cbd8320c776dfcb977f9265fa1c38e4670dfade4f2e70513f4"
+    },
+    "tests/test_state_training_statistics.py": {
+      "bytes": 5665,
+      "sha256": "01c61042b00bc51aadf665161093723418c69d6afc609f79b1dacc7a93fdf2da"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 1767,
+      "sha256": "5fc2034454d626edde1991358dd64e1198205f5cbd5f15d1d23202dd19436bcb"
+    }
+  },
+  "self_manifest_excluded_from_file_hashes": true
+}
